@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css"> <!-- Main CSS for general styles -->
+    <link rel="stylesheet" href="about.css"> <!-- CSS specifically for the About Me section -->
+    <link rel="stylesheet" href="contact.css"> <!-- CSS specifically for the Contact form section -->
+    <link rel="stylesheet" href="skills.css"> <!-- CSS specifically for the Skills section -->
+    <link rel="stylesheet" href="Education.css"> <!-- CSS specifically for the Skills section -->
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="#home">
+                <img src="logo.png" alt="Alyk Lippincott Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home" style="scroll-margin-top: 12vh;">
+        <video autoplay muted loop id="bg-video">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <img src="picture.jpeg" alt="Profile Picture" class="profile-pic">
+            <div class="info">
+                <h1>Alyk Lippincott</h1>
+                <h3>Cybersecurity & Networking</h3>
+                <p>Hi, I'm Alyk Lippincott, a dedicated and driven cybersecurity and networking student.</p>
+                <a href="Resume.pdf" class="download-cv">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" style="scroll-margin-top: 12vh;">
+        <h2>About Me</h2>
+        <p class="about-subtitle">- who I am -</p>
+        <div class="about-content">
+            <div class="about-slider">
+                <div class="about-slides">
+                    <!-- Slide images -->
+                    <div class="about-slide">
+                        <img src="skate.jpg" alt="Photo 1">
+                    </div>
+                    <div class="about-slide">
+                        <img src="alyk_dad.jpg" alt="Photo 2">
+                    </div>
+                    <div class="about-slide">
+                        <img src="alyk_kenna.jpg" alt="Photo 3">
+                    </div>
+                    <div class="about-slide">
+                        <img src="elliot.JPG" alt="Photo 4">
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <div class="arrow-nav">
+                    <span id="prevArrow" class="prev-arrow">&#10094;</span>
+                    <span id="nextArrow" class="next-arrow">&#10095;</span>
+                </div>
+            </div>
+
+            <div class="about-text">
+                <h3>Alyk Lippincott a passionate <span class="highlight">Cybersecurity & Networking student</span></h3>
+                <p>
+                    Hello! I’m Alyk Lippincott, a cybersecurity and networking student with a strong passion for protecting digital information. I started my journey with an Associate's degree in Computer Technology, focusing on Cybersecurity and Networking, and am now continuing my studies at the University of Cincinnati. My goal is to gain deeper expertise in cybersecurity and make a positive impact in the field. Outside of academics, I’m all about family, sports, and spending quality time with my dog. I’m an Ohio State sports enthusiast and love playing soccer whenever I get the chance. Being active is a big part of who I am, and I believe sports have taught me the importance of teamwork, dedication, and persistence—qualities that help me both on and off the field.
+                </p>
+                <a href="Resume.pdf" class="download-cv">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" style="scroll-margin-top: 12vh;">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skills-column">
+                <h3>Cybersecurity & Network Management</h3>
+                <ul>
+                    <li>-Network Security (ACLs, Firewall Configuration)</li>
+                    <li>-Network Switch Configuration & Optimization</li>
+                    <li>-Incident Response (NIST Guidelines)</li>
+                    <li>-Cybersecurity Risk Assessment</li>
+                    <li>-Server Maintenance & Backups</li>
+                    <li>-Network Traffic Management</li>
+                    <li>-Virus Detection</li>
+                    <li>-Threat Mitigation</li>
+                    <li>-Active Directory</li>
+                </ul>
+            </div>
+            <div class="skills-column">
+                <h3>Systems & Automation</h3>
+                <ul>
+                    <li>-Virtualization (Proxmox Lab Management)</li>
+                    <li>-SIEM Deployment & Monitoring</li>
+                    <li>-Cloud Security</li>
+                    <li>-Encryption & Cryptography</li>
+                    <li>-VPN Management</li>
+                    <li>-Scripting for Automation (Python, PowerShell)</li>
+                    <li>-SQL & Database Management</li>
+                </ul>
+            </div>
+            <div class="skills-column">
+                <h3>Software & Office Tools</h3>
+                <ul>
+                    <li>-Web Application Security</li>
+                    <li>-PowerPoint</li>
+                    <li>-Excel</li>
+                    <li>-Word</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="education" style="scroll-margin-top: 12vh;">
+        <h2>Education</h2>
+        <div class="education-content">
+            <!-- University of Cincinnati -->
+            <div class="education-item">
+                <div class="education-header">
+                    <h3>University of Cincinnati</h3>
+                    <p class="education-dates">08/2024 - 07/2027</p>
+                </div>
+                <p>Bachelor of Technology - Cyber Security/Networking</p>
+                <p><strong>Activities:</strong> Cyber@UC</p>
+            </div>
+    
+            <!-- Southern State Community College -->
+            <div class="education-item">
+                <div class="education-header">
+                    <h3>Southern State Community College</h3>
+                    <p class="education-dates">08/2022 - 05/2024</p>
+                </div>
+                <p>Associate's Degree - Computer Science</p>
+                <p><strong>Grade:</strong> 3.94</p>
+                <p><strong>Activities:</strong> Phi Theta Kappa, VP of Service</p>
+                <p><strong>Skills:</strong> Routing, Organizational Leadership, Team Building, Networking, Leadership</p>
+            </div>
+    
+            <!-- Wilmington High School -->
+            <div class="education-item">
+                <div class="education-header">
+                    <h3>Wilmington High School</h3>
+                    <p class="education-dates">08/2018 - 05/2022</p>
+                </div>
+                <p>High School Diploma</p>
+                <ul>
+                    <li>Cane Tech Squad (minor coding and fixing Chromebooks)</li>
+                    <li>Captain of Soccer Team</li>
+                    <li>Key Club (Community Service Club)</li>
+                    <li>Food Pantry Volunteer</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    
+    
+    
+
+    <section id="work" style="scroll-margin-top: 12vh;">
+        <h2>Work</h2>
+        <p>Details about my work experience go here.</p>
+    </section>
+
+    <section id="experience" style="scroll-margin-top: 12vh;">
+        <h2>Experience</h2>
+        <p>Details about my experience go here.</p>
+    </section>
+
+    <section id="contact" style="scroll-margin-top: 12vh;">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or would like to reach out, please fill out the form below.</p>
+        <form id="contactForm" action="mailto:lippincottalyk11@gmail.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    
+    <script>
+        const slides = document.querySelectorAll(".about-slide");
+        const nextArrow = document.getElementById("nextArrow");
+        const prevArrow = document.getElementById("prevArrow");
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? "block" : "none";
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        nextArrow.addEventListener("click", nextSlide);
+        prevArrow.addEventListener("click", prevSlide);
+
+        
+        showSlide(currentIndex);
+    </script>
+</body>
+</html>

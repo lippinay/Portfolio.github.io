@@ -1,0 +1,85 @@
+/* Skills Section Styles */
+#skills {
+    background-color: #f5f5f5; /* Dark blue for better visual contrast */
+    color: #030303; /* White text for readability */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: clamp(2rem, 5vw, 2.5rem); /* Dynamic font size for responsiveness */
+    margin-bottom: 20px;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between skill cards */
+}
+
+/* Skills Columns (Cards) */
+.skills-column {
+    background-color: #3e62a6; /* Purple-blue for cards */
+    color: #ffffff; 
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for modern look */
+    width: clamp(250px, 30%, 350px); /* Dynamic card size based on screen width */
+    text-align: left;
+}
+
+.skills-column h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.skills-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-column li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    line-height: 1.6; /* Better spacing for readability */
+}
+
+/* Hover Effect for Cards */
+.skills-column:hover {
+    background-color: #5a54cc; /* Slightly lighter shade on hover */
+    transform: translateY(-5px); /* Subtle hover lift effect */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-column {
+        width: 100%; /* Full-width for smaller screens */
+        margin-bottom: 20px; /* Add spacing between stacked cards */
+    }
+}
+
+@media (max-width: 480px) {
+    #skills {
+        padding: 30px 10px; /* Reduce padding for smaller screens */
+    }
+
+    #skills h2 {
+        font-size: 2rem; /* Slightly smaller heading for compact screens */
+    }
+
+    .skills-column {
+        padding: 15px; /* Adjust padding for smaller cards */
+    }
+
+    .skills-column h3 {
+        font-size: 1.5rem; /* Smaller heading in cards */
+    }
+
+    .skills-column li {
+        font-size: 1rem; /* Smaller text for better fit */
+    }
+}
