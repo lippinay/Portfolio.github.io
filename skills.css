@@ -3,7 +3,9 @@
     background-color: #f5f5f5; /* Dark blue for better visual contrast */
     color: #030303; /* White text for readability */
     padding: 40px 20px;
-    text-align: center;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center text */
 }
 
 #skills h2 {

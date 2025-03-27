@@ -2,7 +2,9 @@
 #contact {
     padding: 60px 20px;
     background-color: #f9f9f9;
-    text-align: center;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center text */
 }
 
 #contact h2 {
@@ -66,3 +68,19 @@
 .submit-btn:hover {
     background-color: #5a54cc;
 }
+footer {
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', serif; 
+    padding: 20px;
+    margin-left: 190px;
+    background-color: #f9f9f9;
+    clear: both; /* Clears all floats */
+}
+@media (max-width: 768px) {
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        margin: 0 auto;
+    }

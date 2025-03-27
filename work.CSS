@@ -1,0 +1,70 @@
+/* Table Styling */
+.work-table {
+    width: 80%; /* Reduced width for better centering */
+    border-collapse: collapse;
+    margin: 20px auto; /* Centers the table within the section */
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    color: #333;
+}
+
+.work-table thead {
+    background-color: #4a69bd; /* Blue header background */
+    color: #ffffff; /* White text for header */
+}
+
+.work-table th, .work-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center; /* Aligns text in the table to the center */
+}
+
+.work-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.work-table tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Certifications List Styling */
+.certifications-list {
+    list-style-type: none; /* Removes default bullet points */
+    margin: 20px auto; /* Centers the list */
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    width: 50%; /* Centers and adjusts the width of the list */
+    text-align: left; /* Aligns text for better readability */
+}
+
+.certifications-list li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    text-align: left; /* Aligns text for readability */
+}
+
+/* Sticky Experience Section Header */
+#experience h2 {
+    position: sticky;
+    top: 0; /* Adjust this value if you have a fixed navbar */
+    z-index: 10;
+    background-color: #f9f9f9; /* Match background for seamless look */
+    padding: 15px 0;
+    margin: 0;
+    font-size: 2.5em;
+    text-align: center; /* Center aligns the header */
+    border-bottom: 2px solid #4a69bd; /* Optional border for clarity */
+    color: #333; /* Darker text color for better contrast */
+}
+
+/* Center the Experience Section */
+#experience {
+    text-align: center; /* Centers all text inside the section */
+}
+
+/* Center Experience and Licenses Headers */
+#experience h2, #experience ul {
+    text-align: center; /* Centers headers and unordered lists */
+    margin: 0 auto; /* Ensures the elements are centered within the section */
+}

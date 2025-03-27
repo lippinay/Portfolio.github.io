@@ -10,11 +10,18 @@
     box-sizing: border-box; /* Includes padding in height calculation */
 }
 
-/* Section Title */
+/* Sticky Section Title */
 #education h2 {
+    position: sticky;
+    top: 0; /* Sticks the header to the top of the viewport */
+    z-index: 10; /* Ensures it stays above other elements */
+    background-color: #f5f5f5; /* Matches the section background */
+    padding: 15px 20px;
+    margin: 0;
+    border-bottom: 2px solid #4a69bd; /* Optional border for clarity */
     font-size: 2.5em;
-    margin-bottom: 20px;
     color: #000000; /* Bold blue color for the header */
+    text-align: center;
 }
 
 /* Flexbox for Education Cards */
@@ -49,7 +56,7 @@
 
 .education-header .education-dates {
     font-size: 1em;
-    color: #f0d78c; /* Golden yellow for the dates */
+    color: #ffffff; /* Golden yellow for the dates */
     text-align: right;
 }
 
@@ -83,3 +90,4 @@
         margin-top: 5px;
     }
 }
+

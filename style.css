@@ -203,3 +203,11 @@ header {
         font-size: 0.8rem;
     }
 }
+@media (max-width: 768px) {
+    .profile-picture {
+        max-width: 120px; /* Scale down the image for smaller screens */
+    }
+
+    .profile-container {
+        padding: 10px; /* Reduce padding for smaller devices */
+    }
