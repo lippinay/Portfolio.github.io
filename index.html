@@ -1,293 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <link rel="stylesheet" href="style.css"> <!-- Main CSS for general styles -->
-    <link rel="stylesheet" href="about.css"> <!-- CSS specifically for the About Me section -->
-    <link rel="stylesheet" href="contact.css"> <!-- CSS specifically for the Contact form section -->
-    <link rel="stylesheet" href="skills.css"> <!-- CSS specifically for the Skills section -->
-    <link rel="stylesheet" href="Education.css"> <!-- CSS specifically for the Skills section -->
-    <link rel="stylesheet" href="work.CSS"> <!-- CSS specifically for the Skills section -->
-</head>
-<body>
-
-    <header>
-        <div class="logo">
-            <a href="#home">
-                <img src="logo.png" alt=" Professional Picture of Alyk Lippincott">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alyk Lippincott — Cybersecurity &amp; Networking</title>
+        <meta name="description" content="Meet Alyk Lippincott, a cybersecurity and networking student at the University of Cincinnati. Explore experience, skills, education, and credentials.">
+        <link rel="stylesheet" href="style.css">
+        <!-- Main CSS for general styles -->
+    </head>
+    <body>
+        <a class="skip-link" href="#experience">Skip to content</a>
+        <header>
+            <a class="wordmark" href="#home" aria-label="Alyk Lippincott home">Alyk Lippincott<span>.</span>
             </a>
+            <nav aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li>
+                        <a href="#experience">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-contact">Let’s connect ↗</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="home" id="home">
+                <video autoplay muted loop playsinline id="bg-video" aria-hidden="true">
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+                <button type="button" class="video-toggle" aria-controls="bg-video" id="video-toggle">Pause background</button>
+                <div class="hero-content">
+                    <div class="info">
+                        <p class="eyebrow">IT ENGINEER / CYBERSECURITY / NETWORKING</p>
+                        <h1>Alyk<br>Lippincott<span>.</span>
+                        </h1>
+                        <p class="hero-description">Building reliable systems.<br>Keeping security in focus.</p>
+                        <p class="hero-intro">IT Engineer and cybersecurity &amp; networking student at the University of Cincinnati. Hands-on with enterprise networks, identity, and secure infrastructure.</p>
+                        <div class="hero-actions">
+                            <a href="#experience" class="download-cv">Explore my experience <span aria-hidden="true">↘</span>
+                            </a>
+                            <a href="Resume.pdf" class="text-link" target="_blank" rel="noopener">View résumé <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="portrait">
+                        <img src="picture.jpeg" alt="Alyk Lippincott" width="484" height="485">
+                        <figcaption>
+                            <span class="status-dot">
+                            </span>Learning. Building. Securing.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="hero-bottom">
+                        <span>UNIVERSITY OF CINCINNATI</span>
+                        <a href="#experience">Explore my experience <span aria-hidden="true">↓</span>
+                        </a>
+                        <span>IT &amp; NETWORK SECURITY</span>
+                    </div>
+                </section>
+                <section id="experience">
+    <p class="eyebrow">01 / EXPERIENCE</p>
+    <div class="section-heading">
+        <h2>Hands-on. Every day.</h2>
+        <p>From IT intern to engineer: supporting the people, networks, and systems behind a business.</p>
+    </div>
+
+    <article class="current-experience role-profile" aria-labelledby="engineer-title">
+    <div class="role-profile-heading">
+        <div>
+            <p class="experience-label"><span class="status-dot" aria-hidden="true"></span>Current position</p>
+            <h3 id="engineer-title">Information Technology Engineer</h3>
+            <p class="role-company">Ahresty Wilmington Corporation</p>
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <p class="role-tenure">January 2025 – Present</p>
+    </div>
+    <p class="role-intro">Support secure, reliable IT operations across cybersecurity, enterprise networking, and Windows infrastructure.</p>
+
+    <dl class="role-scope" aria-label="Scope of supported environment">
+        <div><dt>Users supported</dt><dd>~350</dd></div>
+        <div><dt>Managed endpoints</dt><dd>350+</dd></div>
+        <div><dt>Windows servers</dt><dd>50+</dd></div>
+    </dl>
+
+    <div class="role-responsibilities">
+        <div class="role-area">
+            <h4><span aria-hidden="true">01</span>Cybersecurity</h4>
+            <ul>
+                <li>Identify vulnerabilities and coordinate remediation; analyze firewall and switch logs to investigate security events.</li>
+                <li>Deploy Microsoft LAPS and automate third-party patch management with ManageEngine.</li>
+                <li>Audit Active Directory security and file server permissions to implement least-privilege access.</li>
+                <li>Monitor endpoint security and patch compliance.</li>
             </ul>
-        </nav>
-    </header>
-
-    <!-- Home Section -->
-    <section class="home" id="home" style="scroll-margin-top: 12vh;">
-        <video autoplay muted loop id="bg-video">
-            <source src="video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="hero-content">
-            <img src="picture.jpeg" alt="Profile Picture" class="profile-pic">
-            <div class="info">
-                <h1>Alyk Lippincott</h1>
-                <h3>Cybersecurity & Networking</h3>
-                <p>Hi, I'm Alyk Lippincott, a dedicated and driven cybersecurity and networking student.</p>
-                <a href="Resume.pdf" class="download-cv">Resume</a>
-            </div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" style="scroll-margin-top: 12vh;">
-        <h2>About Me</h2>
-        <p class="about-subtitle">- who I am -</p>
-        <div class="about-content">
-            <div class="about-slider">
-                <div class="about-slides">
-                    <!-- Slide images -->
-                    <div class="about-slide">
-                        <img src="skate.jpg" alt="A photo of me and my girlfrined ice skating">
-                    </div>
-                    <div class="about-slide">
-                        <img src="alyk_dad.jpg" alt="A photo of me and my dad at my graduation">
-                    </div>
-                    <div class="about-slide">
-                        <img src="alyk_kenna.jpg" alt="A photo of me with my girlfriend at dinner">
-                    </div>
-                    <div class="about-slide">
-                        <img src="elliot.JPG" alt="A photo of my dog Elliot">
-                    </div>
-                </div>
-
-                <!-- Navigation Arrows -->
-                <div class="arrow-nav">
-                    <span id="prevArrow" class="prev-arrow">&#10094;</span>
-                    <span id="nextArrow" class="next-arrow">&#10095;</span>
-                </div>
-            </div>
-
-            <div class="about-text">
-                <h3>Alyk Lippincott a passionate <span class="highlight">Cybersecurity & Networking student</span></h3>
-                <p>
-                    Hello! I’m Alyk Lippincott, a cybersecurity and networking student with a strong passion for protecting digital information. I started my journey with an Associate's degree in Computer Technology, focusing on Cybersecurity and Networking, and am now continuing my studies at the University of Cincinnati. My goal is to gain deeper expertise in cybersecurity and make a positive impact in the field. Outside of academics, I’m all about family, sports, and spending quality time with my dog. I’m an Ohio State sports enthusiast and love playing soccer whenever I get the chance. Being active is a big part of who I am, and I believe sports have taught me the importance of teamwork, dedication, and persistence—qualities that help me both on and off the field.
-                </p>
-                <a href="Resume.pdf" class="download-cv">Resume</a>
-            </div>
+        <div class="role-area">
+            <h4><span aria-hidden="true">02</span>Network operations</h4>
+            <ul>
+                <li>Administer Cisco Meraki networks and configure and troubleshoot Cisco switches.</li>
+                <li>Configure VLANs, network segmentation, ACLs, switch ports, and trunks.</li>
+                <li>Deploy wireless SSIDs and support RADIUS/NPS authentication.</li>
+                <li>Diagnose network outages and DHCP/DNS issues; contribute to manufacturing network improvements.</li>
+            </ul>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" style="scroll-margin-top: 12vh;">
-        <h2>My Skills</h2>
-        <div class="skills-container">
-            <div class="skills-column">
-                <h3>Cybersecurity & Network Management</h3>
-                <ul>
-                    <li>-Network Security (ACLs, Firewall Configuration)</li>
-                    <li>-Network Switch Configuration & Optimization</li>
-                    <li>-Incident Response (NIST Guidelines)</li>
-                    <li>-Cybersecurity Risk Assessment</li>
-                    <li>-Server Maintenance & Backups</li>
-                    <li>-Network Traffic Management</li>
-                    <li>-Threat Mitigation</li>
-                    <li>-Active Directory</li>
-                </ul>
-            </div>
-            <div class="skills-column">
-                <h3>Systems & Automation</h3>
-                <ul>
-                    <li>-Virtualization (Proxmox Lab Management)</li>
-                    <li>-SIEM Deployment & Monitoring</li>
-                    <li>-Cloud Security</li>
-                    <li>-Encryption & Cryptography</li>
-                    <li>-VPN Management</li>
-                    <li>-Scripting for Automation</li>
-                    <li>-SQL & Database Management</li>
-                </ul>
-            </div>
-            <div class="skills-column">
-                <h3>Software & Office Tools</h3>
-                <ul>
-                    <li>-PowerPoint</li>
-                    <li>-Excel</li>
-                    <li>-Word</li>
-                    <li>-Outlook</li>
-                    <li>-One Drive</li>
-                    <li>-Microsoft Teams</li>
-                    <li>-DaVinci Resolve</li>
-                </ul>
-            </div>
+        <div class="role-area">
+            <h4><span aria-hidden="true">03</span>Systems &amp; identity</h4>
+            <ul>
+                <li>Administer Active Directory and Group Policy, including user provisioning and deprovisioning.</li>
+                <li>Implement department-based security groups and manage file server access.</li>
+                <li>Maintain Windows Servers, virtual machines, and hosts through patching and routine maintenance.</li>
+                <li>Perform backup and recovery operations.</li>
+            </ul>
         </div>
-    </section>
+    </div>
+</article>
 
-    
-    <section id="education" style="scroll-margin-top: 12vh;">
-        <h2>Education</h2>
-        <div class="education-content">
-            <!-- University of Cincinnati -->
-            <div class="education-item">
-                <div class="education-header">
-                    <h3>University of Cincinnati</h3>
-                    <p class="education-dates">08/2024 - 07/2027</p>
-                </div>
-                <p><strong>Double Bachelors of Technology - Cybersecurity/Networking</strong></p>
-                <p><strong>GPA:</strong> 4.0</p>
-                <p><strong>Activities:</strong> Cyber@UC</p>
-            </div>
-    
-            <!-- Southern State Community College -->
-            <div class="education-item">
-                <div class="education-header">
-                    <h3>Southern State Community College</h3>
-                    <p class="education-dates">08/2022 - 05/2024</p>
-                </div>
-                <p><strong>Associate's Degree (AAS) - Cybersecurtiy/Netowrking</strong></p>
-                <p><strong>GPA:</strong> 3.94</p>
-                <p><strong>Activities:</strong> Phi Theta Kappa</p>
-                <p>VP of Service</p>
-            </div>
-    
-            <!-- Wilmington High School -->
-            <div class="education-item">
-                <div class="education-header">
-                    <h3>Wilmington High School</h3>
-                    <p class="education-dates">08/2018 - 05/2022</p>
-                </div>
-                <p><strong>High School Diploma</strong></p>
-                <p><strong>GPA:</strong> 3.82</p>
-                <p><strong>Activities: </strong>Cane Tech Squad (minor coding and fixing Chromebooks)</p>
-                    <p>Captain of Soccer Team</p>
-                    <p>Key Club (Community Service Club)</p>
-                    <p>Food Pantry Volunteer</p>
-            </div>
+    <article class="intern-experience" aria-labelledby="intern-title">
+        <div>
+            <p class="experience-label">Earlier experience</p>
+            <h3 id="intern-title">Information Technology Intern</h3>
+            <p class="intern-company">Ahresty Wilmington Corporation</p>
+            <p class="intern-dates">May–July 2023 &amp; May–July 2024</p>
         </div>
-    </section>
-    
+        <div>
+            <p>Built a foundation in network security and day-to-day IT operations.</p>
+            <ul>
+                <li>Implemented ACLs and configured and monitored switches.</li>
+                <li>Supported server maintenance, backups, device deployment, and inventory.</li>
+                <li>Assisted with threat detection, response, and help desk support.</li>
+            </ul>
+        </div>
+    </article>
+</section>
+                    <section id="projects">
+                    <p class="eyebrow">02 / SELECTED PROJECTS</p>
+                    <h2>Security in practice.</h2>
+                    <p class="section-intro">Selected work in security, infrastructure, and command-line scripting.</p>
+                    <div class="projects-grid">
+<article class="project">
+                            <div class="project-number">
+                                <span>SENIOR DESIGN / TEAM PROJECT</span>
+                                <span>IN PROGRESS</span>
+                            </div>
+                            <h3>ZombieGuard</h3>
+<p>A team senior design project to discover forgotten accounts and help users understand potential breach exposure.</p>
+<p class="project-contribution"><strong>My role:</strong> Full-stack Developer / Project Floater.</p>
+<div class="tags">
+                                <span>Gmail API</span>
+                                <span>XposedOrNot</span>
+                                <span>Account discovery</span>
+                                <span>Privacy-conscious design</span>
+                            </div>
+<details class="project-details"><summary>Read project details</summary><div class="project-detail-body">
+                            <p>Developing a senior design project with a team at the University of Cincinnati to help users discover forgotten online accounts and understand their potential breach exposure.</p>
+                            <p>The planned workflow uses explicitly authorized Gmail metadata—sender, subject, and date—to identify account-related emails, then checks the user’s email address against known breach data through XposedOrNot. A centralized dashboard will prioritize accounts for review and recommend actions such as password updates, multi-factor authentication, or account removal.</p>
 
+                            <p class="confidential-note">Designed for metadata-only access and session-based data handling. Cleanup actions remain under the user’s control. Development and demonstrations are planned for team-approved test accounts.</p>
 
-    <section id="experience" style="scroll-margin-top: 12vh;">
-        <h2>Experience</h2>
-        <table class="work-table">
-            <thead>
-                <tr>
-                    <th>Position</th>
-                    <th>Company</th>
-                    <th>Dates</th>
-                    <th>Responsibilities</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Information Technology Intern</td>
-                    <td>Ahresty Wilmington Corporation</td>
-                    <td>May 2024 – Current</td>
-                    <td>
-                        <p>Implemented Access Control Lists (ACLs), configured network switches, and performed server maintenance.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Information Technology Intern</td>
-                    <td>Ahresty Wilmington Corporation</td>
-                    <td>May 2023 – July 2023</td>
-                    <td>
-                        <p>Implemented Access Control Lists (ACLs), configured network switches, and performed server maintenance.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Server</td>
-                    <td>Ralph's American Grill</td>
-                    <td>Sept. 2022 – Sept. 2024</td>
-                    <td>
-                        <p>Managed orders, maintained cleanliness, and ensured an excellent dining experience.</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    
-        <h2>Licenses & Certifications</h2>
-        <ul class="certifications-list">
-            <li><a href="https://www.credly.com/badges/575c5173-01b4-4af8-b2f9-065d7cde8892/linked_in_profile" target="_blank">- CCNA: Enterprise Networking, Security, and Automation</a></li>
-            <li><a href="https://www.credly.com/badges/29696022-811b-4adb-98a2-011dd9d3918b/linked_in_profile" target="_blank">- CCNA: Switching, Routing, and Wireless Essentials</a></li>
-            <li><a href="https://www.credly.com/badges/8ebd6192-7e13-46eb-b7c3-b2c36393e79f/linked_in_profile" target="_blank">- CCNA: Introduction to Networks</a></li>
-            <li><a href="https://www.credly.com/badges/e215cd58-e972-453d-b861-79520263ab41/linked_in_profile" target="_blank">- Cyber Threat Management</a></li>
-            <li><a href="https://www.credly.com/badges/e9e1476c-4395-4c54-bce9-85bd7645cd9b/linked_in_profile" target="_blank">- Introduction to Cybersecurity</a></li>
-            <li><a href="https://www.credly.com/badges/63d0df24-fd1b-48e0-bf7e-05fa58ca4be4/linked_in_profile" target="_blank">- Introduction to IoT</a></li>
-            <li><a href="https://www.credly.com/badges/06c1cba2-177a-402f-92b8-43430efac037/linked_in_profile" target="_blank">- AWS Educate: Getting Started with Compute</a></li>
-            <li><a href="https://www.credly.com/badges/089ed906-3755-4641-8338-536c8d0a3a43/linked_in_profile" target="_blank">- AWS Educate: Getting Started with Databases</a></li>
-            <li><a href="https://www.credly.com/badges/49d5715e-c0a5-4e24-9fbb-83978ed6027d/linked_in_profile" target="_blank">- AWS Educate: Getting Started with Security</a></li>
-            <li><a href="https://www.credly.com/badges/0ca18b3f-9068-4203-9cec-dba23ca56e3a/linked_in_profile" target="_blank">- AWS Educate: Getting Started with Storage</a></li>
-            <li><a href="https://www.credly.com/badges/f96d6b52-a9e8-4521-b167-7d71dd089e82/linked_in_profile" target="_blank">- AWS Educate: Introduction to Cloud 101</a></li>
-        </ul>
-    </section>
-    
+                        </div></details></article>
+                        <article class="project">
+                            <div class="project-number">
+                                <span>01 / INFRASTRUCTURE</span>
+                                <span>DEC 2025–PRESENT</span>
+                            </div>
+                            <h3>Proxmox Home Lab</h3>
+<p>A Proxmox home lab for building hands-on experience with identity, network segmentation, and Windows security configurations.</p>
+<p class="project-contribution"><strong>My work:</strong> Build and maintain the lab; test configurations and hardening.</p>
+<div class="tags">
+                                    <span>Proxmox</span>
+                                    <span>Active Directory</span>
+                                    <span>VLANs</span>
+                                    <span>Windows Server</span>
+                                </div>
+<details class="project-details"><summary>Explore the lab</summary><div class="project-detail-body">
+                            <p>Built and maintain a Proxmox home lab for hands-on testing with Active Directory, Windows Servers, and network segmentation. Use the lab to explore authentication and access controls, test network segmentation, and practice patching and system hardening.</p>
+                            <p class="project-takeaway">
+                                <strong>Focus:</strong> Testing configurations and practicing security concepts in a dedicated lab environment.</p>
 
-    <section id="contact" style="scroll-margin-top: 12vh;">
-        <h2>Contact Me</h2>
-        <p>If you have any questions or would like to reach out, please fill out the form below.</p>
-        <form id="contactForm" action="mailto:lippincottalyk11@gmail.com" method="POST" enctype="text/plain">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-    </section>
+                            </div></details></article>
+                            <article class="project">
+                                <div class="project-number">
+                                    <span>02 / SECURITY</span>
+                                    <span>FEB–MAY 2024</span>
+                                </div>
+                                <h3>NIST risk &amp; response planning</h3>
+<p>A cybersecurity risk assessment and NIST-aligned incident response planning project.</p>
+<p class="project-contribution"><strong>My work:</strong> Assess risks and communicate security recommendations.</p>
+<div class="tags">
+                                    <span>NIST</span>
+                                    <span>Risk assessment</span>
+                                    <span>Incident response</span>
+                                </div>
+<details class="project-details"><summary>Read the overview</summary><div class="project-detail-body">
+                                <p>Conducted a cybersecurity risk assessment and developed an incident response plan aligned with NIST guidelines. The work included evaluating cybersecurity risks, developing NIST-aligned incident response guidance, and communicating recommended security improvements. </p>
+                                <p class="confidential-note">Confidential engagement · Public overview only. Findings and internal documentation are not shared.</p>
 
-    
-    <script>
-        const slides = document.querySelectorAll(".about-slide");
-        const nextArrow = document.getElementById("nextArrow");
-        const prevArrow = document.getElementById("prevArrow");
-        let currentIndex = 0;
+                            </div></details></article>
+                            <article class="project">
+                                <div class="project-number">
+                                    <span>03 / SCRIPTING</span>
+                                    <span>BASH + AWK</span>
+                                </div>
+                                <h3>Bash CSV filtering utility</h3>
+<p>A Bash command-line tool for filtering CSV rows using regular expressions.</p>
+<p class="project-contribution"><strong>My work:</strong> Build the filtering script and document its usage.</p>
+<div class="tags">
+                                    <span>Bash</span>
+                                    <span>awk</span>
+                                    <span>Regex</span>
+                                    <span>CLI</span>
+                                </div>
+<details class="project-details"><summary>View implementation details</summary><div class="project-detail-body">
+                                <p>Built a Bash utility that filters rows in a selected CSV column using a regular expression. Supports command-line options, preserves the header, checks required arguments and input-file existence, and writes results to the terminal or an output file.</p>
 
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.style.display = i === index ? "block" : "none";
-            });
-        }
-
-        function nextSlide() {
-            currentIndex = (currentIndex + 1) % slides.length;
-            showSlide(currentIndex);
-        }
-
-        function prevSlide() {
-            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-            showSlide(currentIndex);
-        }
-
-        nextArrow.addEventListener("click", nextSlide);
-        prevArrow.addEventListener("click", prevSlide);
-
-        
-        showSlide(currentIndex);
-    </script>
-    <footer>
-        <i><small>Copyright &copy; 2024 University of Cincinati, IT2040 <br>
-        <a href="mailto:Lippincottalyk11@gmail.com">Lippincottalyk11@gmail.com</a></small></i>
-        </footer>
-</body>
-</html>
+                                <a class="text-link" href="https://github.com/lippinay/CSVDataProcessing" target="_blank" rel="noopener noreferrer">Explore the repository ↗</a>
+                            </div></details></article>
+                        </div>
+                        <a class="text-link section-link" href="https://github.com/lippinay" target="_blank" rel="noopener noreferrer">More coursework and code on GitHub ↗</a>
+                    </section>
+                    <section id="skills">
+    <p class="eyebrow">03 / TECHNICAL SKILLS</p>
+    <h2>Technical skills.</h2>
+    <p class="section-intro">Cybersecurity, networking, and systems experience developed through work, projects, and lab practice.</p>
+    <div class="skills-container">
+        <div class="skills-column">
+            <span class="skill-index">01</span>
+            <h3>Cybersecurity</h3>
+            <ul>
+                <li>Risk assessment · Vulnerability remediation</li>
+                <li>NIST-aligned incident response planning</li>
+                <li>Firewall &amp; switch log review</li>
+                <li>Microsoft LAPS · BitLocker</li>
+                <li>Endpoint hardening</li>
+            </ul>
+        </div>
+        <div class="skills-column">
+            <span class="skill-index">02</span>
+            <h3>Networking &amp; identity</h3>
+            <ul>
+                <li>Meraki · Cisco switches · Cisco ASA</li>
+                <li>Switch configuration · VLANs · Routing</li>
+                <li>ACLs · VPNs</li>
+                <li>Active Directory · Group Policy</li>
+                <li>NPS / RADIUS</li>
+            </ul>
+        </div>
+        <div class="skills-column">
+            <span class="skill-index">03</span>
+            <h3>Systems &amp; automation</h3>
+            <ul>
+                <li>Windows Server administration</li>
+                <li>Proxmox virtualization</li>
+                <li>Backups · Enterprise patching</li>
+                <li>Bash · awk</li>
+                <li>Java fundamentals</li>
+            </ul>
+        </div>
+    </div>
+</section>
+                    <section id="education">
+                        <p class="eyebrow">04 / EDUCATION &amp; LEARNING</p>
+                        <h2>Always building on the foundation.</h2>
+                        <div class="education-content">
+                            <!-- University of Cincinnati -->
+                            <div class="education-item">
+                                <div class="education-header">
+                                    <h3>University of Cincinnati</h3>
+                                    <p class="education-dates">Expected graduation: May 2027</p>
+                                </div>
+                                <p>
+                                    <strong>Dual Bachelor of Science — Cybersecurity and Networking</strong>
+                                </p>
+                                <p>
+                                    <strong>GPA:</strong> 3.98</p>
+                                    </div>
+                                    <!-- Southern State Community College -->
+                                    <div class="education-item">
+                                        <div class="education-header">
+                                            <h3>Southern State Community College</h3>
+                                            <p class="education-dates">08/2022 - 05/2024</p>
+                                        </div>
+                                        <p>
+                                            <strong>Associate of Science — Cybersecurity and Networking</strong>
+                                        </p>
+                                        <p>
+                                            <strong>GPA:</strong> 3.93</p>
+                                            <p>
+                                                <strong>Activities:</strong> Phi Theta Kappa</p>
+                                                <p>Vice President of Service · All-Ohio Academic Team</p>
+                                            </div>
+                                        </div>
+                                        <details class="credentials">
+                                            <summary>Explore learning credentials <span>13 course badges &amp; completions</span>
+                                            </summary>
+                                            <p>Course completion badges and learning credentials from Cisco, AWS Educate, and LinkedIn Learning.</p>
+                                            <p>Forensics coursework: Operating System Forensics and Cybersecurity Foundations: Computer Forensics.</p>
+                                            <ul class="certifications-list">
+                                                <li class="credential-item">
+                                                    <a href="https://www.linkedin.com/learning/certificates/4845033123f485823ac8291ab491e16d25c4500bae71ab3fcdde66d7ed92d931" target="_blank" rel="noopener noreferrer">Operating System Forensics</a>
+                                                    <small>LinkedIn Learning · Course completion · March 2025</small>
+                                                </li>
+                                                <li class="credential-item">
+                                                    <a href="https://www.linkedin.com/learning/certificates/e224ca842903c8da5c2f79b0efc4368741532477168be30ace45f63b8c10d478" target="_blank" rel="noopener noreferrer">Cybersecurity Foundations: Computer Forensics</a>
+                                                    <small>LinkedIn Learning · Course completion · March 2025</small>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.credly.com/badges/575c5173-01b4-4af8-b2f9-065d7cde8892/linked_in_profile" target="_blank" rel="noopener noreferrer">CCNA: Enterprise Networking, Security, and Automation</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.credly.com/badges/29696022-811b-4adb-98a2-011dd9d3918b/linked_in_profile" target="_blank" rel="noopener noreferrer">CCNA: Switching, Routing, and Wireless Essentials</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.credly.com/badges/8ebd6192-7e13-46eb-b7c3-b2c36393e79f/linked_in_profile" target="_blank" rel="noopener noreferrer">CCNA: Introduction to Networks</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.credly.com/badges/e215cd58-e972-453d-b861-79520263ab41/linked_in_profile" target="_blank" rel="noopener noreferrer">Cyber Threat Management</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.credly.com/badges/e9e1476c-4395-4c54-bce9-85bd7645cd9b/linked_in_profile" target="_blank" rel="noopener noreferrer">Introduction to Cybersecurity</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.credly.com/badges/63d0df24-fd1b-48e0-bf7e-05fa58ca4be4/linked_in_profile" target="_blank" rel="noopener noreferrer">Introduction to IoT</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.credly.com/badges/06c1cba2-177a-402f-92b8-43430efac037/linked_in_profile" target="_blank" rel="noopener noreferrer">AWS Educate: Getting Started with Compute</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.credly.com/badges/089ed906-3755-4641-8338-536c8d0a3a43/linked_in_profile" target="_blank" rel="noopener noreferrer">AWS Educate: Getting Started with Databases</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.credly.com/badges/49d5715e-c0a5-4e24-9fbb-83978ed6027d/linked_in_profile" target="_blank" rel="noopener noreferrer">AWS Educate: Getting Started with Security</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.credly.com/badges/0ca18b3f-9068-4203-9cec-dba23ca56e3a/linked_in_profile" target="_blank" rel="noopener noreferrer">AWS Educate: Getting Started with Storage</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.credly.com/badges/f96d6b52-a9e8-4521-b167-7d71dd089e82/linked_in_profile" target="_blank" rel="noopener noreferrer">AWS Educate: Introduction to Cloud 101</a>
+                                                </li>
+                                            </ul>
+                                        </details>
+                                    </section>
+                                    <section id="about">
+                                        <p class="eyebrow">05 / A LITTLE ABOUT ME</p>
+                                        <div class="about-content">
+                                            <div class="about-text">
+                                                <h2>A technical mindset.<br>
+                                                    <span class="highlight">A personal approach.</span>
+                                                </h2>
+                                                <p>I’m Alyk, an IT Engineer and cybersecurity and networking student based in Cincinnati. I enjoy understanding how systems fit together, solving practical problems, and making infrastructure more reliable and secure.</p>
+                                                <p>Away from the keyboard, you’ll find me playing soccer, following Ohio State sports, or spending time with family and my dog. Curiosity, teamwork, and persistence carry into everything I do.</p>
+                                                <a class="text-link" href="https://www.linkedin.com/in/lippincotta/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
+                                            </div>
+                                            <!-- Replace these src values with your own photos and update the alt text. -->
+                                            <div class="personal-photos">
+                                                <img loading="lazy" src="IMG_1479.JPG" alt="Placeholder for a personal photo">
+                                                <img loading="lazy" src="alyk_dad.jpg" alt="Placeholder for a second personal photo">
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section id="contact">
+    <p class="eyebrow">06 / CONTACT</p>
+    <h2>Let’s connect<span>.</span></h2>
+    <p>Have a cybersecurity or networking opportunity, or want to talk about a project? I’d love to hear from you.</p>
+    <a class="download-cv" href="mailto:lippincottalyk11@gmail.com">Email me <span aria-hidden="true">↗</span></a>
+    <div class="contact-details">
+        <a href="mailto:lippincottalyk11@gmail.com">lippincottalyk11@gmail.com</a>
+        <span class="contact-separator" aria-hidden="true">·</span>
+        <a href="tel:+19375278148">(937) 527-8148</a>
+    </div>
+    <div class="social-links">
+        <a href="Resume.pdf" class="text-link" target="_blank" rel="noopener">View my résumé ↗</a>
+        <a class="text-link" href="https://www.linkedin.com/in/lippincotta/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a class="text-link" href="https://github.com/lippinay" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </div>
+</section>
+                                </main>
+                                <footer>
+                                    <a class="wordmark" href="#home" aria-label="Back to home">Alyk Lippincott<span>.</span>
+                                    </a>
+                                    <p>© <span id="year">
+                                    </span> Alyk Lippincott · Cincinnati, OH</p>
+                                    <a href="#home">Back to top ↑</a>
+                                </footer>
+                                <script src="script.js" defer>
+                                </script>
+                            </body>
+                        </html>
